@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testCoreMLObjFind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6J-oD-51e">
+                                <rect key="frame" x="208" y="28" width="184" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tMA-oR-QVr">
+                                <rect key="frame" x="16" y="113" width="380" height="479"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrX-pg-Z2U">
+                                        <rect key="frame" x="28" y="27" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2Ch-oH-x85"/>
+                                            <constraint firstAttribute="height" constant="50" id="ipz-Ea-wBg"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="cameraSwap"/>
+                                        <connections>
+                                            <action selector="changeCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXL-9F-sk6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="NrX-pg-Z2U" firstAttribute="leading" secondItem="tMA-oR-QVr" secondAttribute="leading" constant="28" id="4zL-FP-HF6"/>
+                                    <constraint firstItem="NrX-pg-Z2U" firstAttribute="top" secondItem="tMA-oR-QVr" secondAttribute="top" constant="27" id="Vzt-sm-PRj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIZ-ar-5tF">
+                                <rect key="frame" x="16" y="28" width="184" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="ebk-Gb-qXk"/>
+                                    <constraint firstAttribute="width" constant="184" id="nev-7E-GJj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQv-2R-DaY">
+                                <rect key="frame" x="18" y="593" width="378" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="NUT-p1-jOi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D6J-oD-51e" firstAttribute="leading" secondItem="xIZ-ar-5tF" secondAttribute="trailing" constant="8" symbolic="YES" id="ATb-Xo-Qbg"/>
+                            <constraint firstItem="OQv-2R-DaY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="JRR-Sr-cEX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D6J-oD-51e" secondAttribute="trailing" constant="22" id="QSm-f0-BcU"/>
+                            <constraint firstItem="OQv-2R-DaY" firstAttribute="top" secondItem="tMA-oR-QVr" secondAttribute="bottom" constant="1" id="TBw-M8-TAn"/>
+                            <constraint firstItem="OQv-2R-DaY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VSd-Pi-85E"/>
+                            <constraint firstItem="tMA-oR-QVr" firstAttribute="top" secondItem="xIZ-ar-5tF" secondAttribute="bottom" constant="8" symbolic="YES" id="WwJ-X7-8Fq"/>
+                            <constraint firstAttribute="bottom" secondItem="OQv-2R-DaY" secondAttribute="bottom" constant="20" symbolic="YES" id="bQp-cu-rg3"/>
+                            <constraint firstItem="xIZ-ar-5tF" firstAttribute="leading" secondItem="tMA-oR-QVr" secondAttribute="leading" id="eTU-O1-rNW"/>
+                            <constraint firstItem="tMA-oR-QVr" firstAttribute="trailing" secondItem="OQv-2R-DaY" secondAttribute="trailing" id="fb5-CK-Gw9"/>
+                            <constraint firstItem="xIZ-ar-5tF" firstAttribute="baseline" secondItem="D6J-oD-51e" secondAttribute="baseline" id="itE-xL-ImG"/>
+                            <constraint firstItem="xIZ-ar-5tF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="mC1-Sp-eI3"/>
+                            <constraint firstItem="xIZ-ar-5tF" firstAttribute="firstBaseline" secondItem="D6J-oD-51e" secondAttribute="firstBaseline" id="sR1-RD-yYJ"/>
+                            <constraint firstItem="xIZ-ar-5tF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="snj-ui-nhg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="xIZ-ar-5tF" id="v1c-th-fPl"/>
+                        <outlet property="genderLabel" destination="D6J-oD-51e" id="pih-H3-vfC"/>
+                        <outlet property="predLabel" destination="OQv-2R-DaY" id="lwe-r7-Y6K"/>
+                        <outlet property="swapCamButton" destination="NrX-pg-Z2U" id="buD-rf-dFI"/>
+                        <outlet property="videoView" destination="tMA-oR-QVr" id="FBg-tf-nTH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="132.06521739130434"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cameraSwap" width="100" height="100"/>
+    </resources>
 </document>

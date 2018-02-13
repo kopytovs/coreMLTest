@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93994B4D202B6E61004B7276 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 93994B4C202B6E61004B7276 /* GenderNet.mlmodel */; };
+		93994B4F202B6E86004B7276 /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 93994B4E202B6E86004B7276 /* AgeNet.mlmodel */; };
+		93A623AC202A1C1F0027D02E /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 93A623AB202A1C1F0027D02E /* Resnet50.mlmodel */; };
 		93ECE2C1202A0BE900915E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ECE2C0202A0BE900915E79 /* AppDelegate.swift */; };
 		93ECE2C3202A0BE900915E79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ECE2C2202A0BE900915E79 /* ViewController.swift */; };
 		93ECE2C6202A0BE900915E79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ECE2C4202A0BE900915E79 /* Main.storyboard */; };
 		93ECE2C8202A0BE900915E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93ECE2C7202A0BE900915E79 /* Assets.xcassets */; };
 		93ECE2CB202A0BE900915E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93ECE2C9202A0BE900915E79 /* LaunchScreen.storyboard */; };
+		93ECE2D3202A14ED00915E79 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 93ECE2D2202A14EC00915E79 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93994B4C202B6E61004B7276 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
+		93994B4E202B6E86004B7276 /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeNet.mlmodel; sourceTree = "<group>"; };
+		93A623AB202A1C1F0027D02E /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		93ECE2BD202A0BE900915E79 /* testCoreMLObjFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCoreMLObjFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93ECE2C0202A0BE900915E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93ECE2C2202A0BE900915E79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		93ECE2C7202A0BE900915E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93ECE2CA202A0BE900915E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93ECE2CC202A0BE900915E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93ECE2D2202A14EC00915E79 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				93ECE2C4202A0BE900915E79 /* Main.storyboard */,
 				93ECE2C7202A0BE900915E79 /* Assets.xcassets */,
 				93ECE2C9202A0BE900915E79 /* LaunchScreen.storyboard */,
+				93ECE2D2202A14EC00915E79 /* SqueezeNet.mlmodel */,
+				93A623AB202A1C1F0027D02E /* Resnet50.mlmodel */,
+				93994B4E202B6E86004B7276 /* AgeNet.mlmodel */,
+				93994B4C202B6E61004B7276 /* GenderNet.mlmodel */,
 				93ECE2CC202A0BE900915E79 /* Info.plist */,
 			);
 			path = testCoreMLObjFind;
@@ -137,6 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				93ECE2C3202A0BE900915E79 /* ViewController.swift in Sources */,
+				93ECE2D3202A14ED00915E79 /* SqueezeNet.mlmodel in Sources */,
+				93994B4F202B6E86004B7276 /* AgeNet.mlmodel in Sources */,
+				93994B4D202B6E61004B7276 /* GenderNet.mlmodel in Sources */,
+				93A623AC202A1C1F0027D02E /* Resnet50.mlmodel in Sources */,
 				93ECE2C1202A0BE900915E79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
